@@ -20,4 +20,4 @@ prep.py: $(root)/build/prep.py
 
 .PHONY: run_proc_flat_from_directory
 run_proc_flat_from_directory: node_modules prep.py node.seccomp ukvm-bin
-	 python prep.py --volume ../nodejsRump:/whisk node.seccomp /whisk/app.js
+	 sudo python prep.py --volume ../nodejsRump:/whisk node.seccomp /whisk/app.js
